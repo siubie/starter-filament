@@ -1,0 +1,11 @@
+models:
+  Post:
+    title: string:400
+    content: longtext
+    published_at: nullable timestamp
+
+  Comment:
+    content: longtext
+    published_at: nullable timestamp
+
+seeders: Post,Comment

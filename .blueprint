@@ -1,0 +1,14 @@
+created:
+    - database/factories/PostFactory.php
+    - database/factories/CommentFactory.php
+    - database/migrations/2024_10_06_125946_create_posts_table.php
+    - database/migrations/2024_10_06_125947_create_comments_table.php
+    - app/Models/Post.php
+    - app/Models/Comment.php
+    - database/seeders/PostSeeder.php
+    - database/seeders/CommentSeeder.php
+models:
+    Todo: { title: string, description: text }
+    User: { name: string, email: string, email_verified_at: 'timestamp nullable', password: string, remember_token: 'string:100 nullable' }
+    Post: { title: 'string:400', content: longtext, published_at: 'nullable timestamp' }
+    Comment: { content: longtext, published_at: 'nullable timestamp' }
